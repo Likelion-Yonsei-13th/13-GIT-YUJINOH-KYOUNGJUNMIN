@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>연세대학교 멋쟁이사자처럼 13기 지원서</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      h1,
+      h2 {
+        color: #333;
+      }
+      .section {
+        margin-bottom: 20px;
+      }
+      .form-group {
+        margin-bottom: 15px;
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      input[type="text"],
+      textarea {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      .date-selection {
+        display: flex;
+        flex-direction: column;
+      }
+      .date-selection label {
+        margin: 5px 0;
+      }
+      .logo {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="logo">
+      <img
+        src="likelion_logo.png"
+        alt="Likelion Logo"
+        style="max-width: 200px"
+      />
+    </div>
+
+    <div class="section">
+      <h1>연세대학교 멋쟁이사자처럼 13기 지원서</h1>
+      <h2>1. 모집일정</h2>
+      <p>서류 접수: 2/6 (월) 09:00 ~ 2/13 (일)</p>
+      <p>서류 합격 발표: 2/16 (목) 18:00</p>
+      <p>최종 면접: 2/21 (화) ~ 2/29 (수)</p>
+      <p>최종 합격 발표: 3/2 (목) 18:00</p>
+    </div>
+
+    <div class="section">
+      <h2>2. 지원 정보</h2>
+      <div class="form-group">
+        <label for="name">이름</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div class="form-group">
+        <label for="school">학교</label>
+        <input type="text" id="school" name="school" required />
+      </div>
+      <div class="form-group">
+        <label for="email">이메일</label>
+        <input type="text" id="email" name="email" required />
+      </div>
+      <div class="form-group">
+        <label for="support-area">지원 분야</label>
+        <select id="support-area" name="support-area">
+          <option value="기획">기획</option>
+          <option value="디자인">디자인</option>
+          <option value="개발">개발</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>문항</h2>
+      <div class="form-group">
+        <label for="self-introduction">1. 자기소개</label>
+        <textarea
+          id="self-introduction"
+          name="self-introduction"
+          rows="4"
+          required
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <label for="experience">2. 관련 경험</label>
+        <textarea
+          id="experience"
+          name="experience"
+          rows="4"
+          required
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <label for="time-commitment"
+          >3. 소속 팀원과 함께할 시간은 얼마나 되나요?</label
+        >
+        <textarea
+          id="time-commitment"
+          name="time-commitment"
+          rows="4"
+          required
+        ></textarea>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>비대면 면접 참석 가능 시간</h2>
+      <div class="date-selection">
+        <label>가능한 시간은 모두 체크해주세요!</label>
+        <label><input type="checkbox" /> 2/28</label>
+        <label><input type="checkbox" /> 2/29</label>
+        <label>시간 선택:</label>
+        <label><input type="checkbox" /> 10시</label>
+        <label><input type="checkbox" /> 11시</label>
+        <label><input type="checkbox" /> 12시</label>
+        <label><input type="checkbox" /> 13시</label>
+        <label><input type="checkbox" /> 14시</label>
+        <label><input type="checkbox" /> 15시</label>
+      </div>
+    </div>
+  </body>
+</html>
